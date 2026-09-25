@@ -13,7 +13,7 @@ const projects = [
       "Status tracking (Applied, Interviewing, Offer, Rejected)",
     ],
     live: "https://smart-application-assistant.vercel.app/",
-    github: "https://github.com/YOUR_USERNAME/job-application-tracker",
+    github: "https://github.com/LanaSimone/job-application-tracker",
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ const projects = [
       "Multi-page React app with routing",
       "Persistent data with SQLite",
     ],
-    live: "YOUR_LIVE_LINK",
-    github: "https://github.com/YOUR_USERNAME/mood-library",
+    live: "https://mood-library-one.vercel.app/",
+    github: "https://github.com/LanaSimone/mood-library",
   },
 ];
 

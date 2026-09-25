@@ -19,8 +19,13 @@ function ProjectCard({ project }) {
       </ul>
 
       <div className="project-links">
-        <a href={project.live} target="_blank">Live Demo</a>
-        <a href={project.github} target="_blank">GitHub</a>
+        <a href={project.live} target="_blank" rel="noreferrer">
+          Live Demo
+        </a>
+
+        <a href={project.github} target="_blank" rel="noreferrer">
+          GitHub
+        </a>
       </div>
     </div>
   );
