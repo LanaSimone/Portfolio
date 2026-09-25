@@ -4,7 +4,7 @@ const projects = [
     name: "Smart Application Assistant",
     description:
       "A full-stack job application tracker that allows users to manage applications, update statuses, and filter/search records.",
-    image: "/project1.png",
+    image: "/smart-application-assistant.png",
     tech: ["React", "Node.js", "Express", "SQLite"],
     features: [
       "User authentication (JWT)",
@@ -20,7 +20,7 @@ const projects = [
     name: "Mood Library",
     description:
       "A full-stack mood-based music library that allows users to organize songs into mood-based playlists.",
-    image: "/project2.png",
+    image: "/mood-library.png",
     tech: ["React", "Node.js", "Express", "SQLite"],
     features: [
       "Add songs with mood categorization",

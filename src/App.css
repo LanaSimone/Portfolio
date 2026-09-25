@@ -169,9 +169,10 @@ a {
 .project-card img {
   display: block;
   width: 100%;
-  height: 230px;
-  object-fit: cover;
-  background: #e2e8f0;
+  height: 260px;
+  object-fit: contain;
+  object-position: center;
+  background: #eef2f7;
 }
 
 .project-card h3,
