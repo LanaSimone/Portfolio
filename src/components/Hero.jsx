@@ -1,31 +1,55 @@
 function Hero() {
   return (
     <section className="hero" id="top">
-      <p className="hero-intro">Hi, I'm Allana.</p>
+      <div className="hero-glow hero-glow-one"></div>
+      <div className="hero-glow hero-glow-two"></div>
 
-      <h1>
-        Full-Stack Developer building practical,
-        <span> user-focused applications.</span>
-      </h1>
+      <div className="hero-content">
+        <div className="hero-eyebrow">
+          <span className="hero-status-dot"></span>
+          <span>Hi, I'm Allana.</span>
+        </div>
 
-      <p className="hero-description">
-        Computer Science graduate building full-stack web applications
-        with React, JavaScript, Node.js, Express, and SQL.
-      </p>
+        <h1>
+          Full-Stack Developer building practical,
+          <span className="hero-gradient"> user-focused applications.</span>
+        </h1>
 
-      <div className="hero-buttons">
-        <a className="primary-button" href="#projects">
-          View My Work
-        </a>
+        <p className="hero-description">
+          Computer Science graduate creating thoughtful full-stack experiences
+          with React, JavaScript, Node.js, Express, and SQL.
+        </p>
 
-        <a
-          className="secondary-button"
-          href="YOUR_GITHUB_URL"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
+        <div className="hero-buttons">
+          <a className="primary-button" href="#projects">
+            View My Work <span>↓</span>
+          </a>
+
+          <a
+            className="secondary-button"
+            href="/Allana-DeCarish-Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume ↗
+          </a>
+
+          <a
+            className="secondary-button"
+            href="https://github.com/LanaSimone"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+
+      <div className="hero-tech" aria-hidden="true">
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>SQL</span>
       </div>
     </section>
   );
