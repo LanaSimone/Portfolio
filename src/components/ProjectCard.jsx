@@ -2,6 +2,10 @@ function ProjectCard({ project }) {
   return (
     <article className="project-showcase">
       <div className="project-visual">
+        <span className="project-sparkle" aria-hidden="true">
+          ✦
+        </span>
+
         <div className="project-window">
           <div className="window-bar">
             <span></span>
@@ -53,6 +57,12 @@ function ProjectCard({ project }) {
             GitHub ↗
           </a>
         </div>
+
+        <p className="project-note" aria-hidden="true">
+          {project.id === 1
+            ? "built to stay organized ✦"
+            : "music for every mood ♡"}
+        </p>
       </div>
     </article>
   );
