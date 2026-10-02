@@ -133,12 +133,9 @@ a {
 
 .hero {
   position: relative;
-  min-height: 720px;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 115px 24px 90px;
-  display: flex;
-  align-items: center;
+  padding: 80px 24px 100px;
   overflow: hidden;
 }
 
@@ -167,12 +164,12 @@ a {
 }
 
 .hero h1 {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0;
   color: var(--text);
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.065em;
+  font-size: clamp(3.5rem, 5.5vw, 5.4rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
 }
 
 .hero-gradient {
@@ -1017,7 +1014,7 @@ a {
 .custom-scroll-track {
   position: fixed;
   top: 20px;
-  right: 10px;
+  right: 3px;
   bottom: 20px;
   z-index: 2000;
 
@@ -1097,21 +1094,33 @@ body::-webkit-scrollbar {
   /* HERO */
 
   .hero {
-    padding: 65px 18px 35px;
+    padding: 55px 18px 65px;
   }
 
   .hero h1 {
-    font-size: 2.6rem;
+    font-size: clamp(2.65rem, 11vw, 3.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.055em;
   }
 
   .hero-description {
-    font-size: 1rem;
-  }
+  margin-top: 26px;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
 
   .hero-buttons {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-top: 28px;
   }
 
+  .hero-buttons a {
+    padding: 11px 14px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
   /* PROJECTS */
 
   .projects-section {
@@ -1240,5 +1249,40 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar,
+  .hero,
+  .projects-section,
+  .skills-section,
+  .about-section,
+  .contact-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateX(0);
+    transform: translateY(30px);
+  }
+
+  .reveal-left.reveal-visible,
+  .reveal-right.reveal-visible {
+    transform: translate(0, 0);
   }
 }
