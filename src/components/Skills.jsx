@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 function Skills() {
   return (
     <section className="skills-section" id="skills">
@@ -14,65 +16,73 @@ function Skills() {
       </div>
 
       <div className="skills-grid">
-        <div className="skill-group">
-          <span className="skill-icon" aria-hidden="true">
-            {"</>"}
-          </span>
+        <Reveal delay={0}>
+          <div className="skill-group">
+            <span className="skill-icon" aria-hidden="true">
+              {"</>"}
+            </span>
 
-          <h3>Frontend</h3>
+            <h3>Frontend</h3>
 
-          <div className="skill-list">
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
+            <div className="skill-list">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="skill-group">
-          <span className="skill-icon" aria-hidden="true">
-            {"{ }"}
-          </span>
+        <Reveal delay={120}>
+          <div className="skill-group">
+            <span className="skill-icon" aria-hidden="true">
+              {"{ }"}
+            </span>
 
-          <h3>Backend & Database</h3>
+            <h3>Backend & Database</h3>
 
-          <div className="skill-list">
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>SQL</span>
-            <span>SQLite</span>
+            <div className="skill-list">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>SQL</span>
+              <span>SQLite</span>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="skill-group">
-          <span className="skill-icon" aria-hidden="true">
-            ✦
-          </span>
+        <Reveal delay={240}>
+          <div className="skill-group">
+            <span className="skill-icon" aria-hidden="true">
+              ✦
+            </span>
 
-          <h3>Tools & Deployment</h3>
+            <h3>Tools & Deployment</h3>
 
-          <div className="skill-list">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Vercel</span>
-            <span>Render</span>
+            <div className="skill-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Vercel</span>
+              <span>Render</span>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="skill-group">
-          <span className="skill-icon" aria-hidden="true">
-            {"//"}
-          </span>
+        <Reveal delay={360}>
+          <div className="skill-group">
+            <span className="skill-icon" aria-hidden="true">
+              {"//"}
+            </span>
 
-          <h3>Additional</h3>
+            <h3>Additional</h3>
 
-          <div className="skill-list">
-            <span>Python</span>
-            <span>REST APIs</span>
-            <span>Responsive Design</span>
-            <span>Authentication</span>
+            <div className="skill-list">
+              <span>Python</span>
+              <span>REST APIs</span>
+              <span>Responsive Design</span>
+              <span>Authentication</span>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

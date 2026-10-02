@@ -493,8 +493,6 @@ a {
 
 /* SKILLS */
 
-/* SKILLS */
-
 .skills-section {
   max-width: 1150px;
   margin: 0 auto;
@@ -598,8 +596,6 @@ a {
   font-size: 0.78rem;
   font-weight: 500;
 }
-
-/* ABOUT */
 
 /* ABOUT */
 
@@ -781,8 +777,6 @@ a {
 }
 /* CONTACT */
 
-/* CONTACT */
-
 .contact-section {
   max-width: 1150px;
   margin: 0 auto;
@@ -930,6 +924,21 @@ a {
   font-size: 0.78rem;
 }
 
+/* SCROLL REVEAL */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(55px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* MOBILE */
 
 @media (max-width: 750px) {
@@ -1041,8 +1050,9 @@ a {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
   }
 
   .skill-group {
@@ -1064,8 +1074,6 @@ a {
   .about-heading h2 {
     font-size: 1.8rem;
   }
-
-  /* CONTACT */
 
   /* CONTACT */
 
