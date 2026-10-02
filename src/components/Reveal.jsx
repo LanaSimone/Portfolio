@@ -1,6 +1,6 @@
 import { cloneElement, useEffect, useRef, useState } from "react";
 
-function Reveal({ children, delay = 0 }) {
+function Reveal({ children, delay = 0, direction = "up" }) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -9,7 +9,8 @@ function Reveal({ children, delay = 0 }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target);
+        } else {
+          setIsVisible(false);
         }
       },
       {
@@ -27,12 +28,14 @@ function Reveal({ children, delay = 0 }) {
       if (currentElement) {
         observer.unobserve(currentElement);
       }
+
+      observer.disconnect();
     };
   }, []);
 
   return cloneElement(children, {
     ref: elementRef,
-    className: `${children.props.className || ""} reveal ${
+    className: `${children.props.className || ""} reveal reveal-${direction} ${
       isVisible ? "reveal-visible" : ""
     }`,
     style: {
