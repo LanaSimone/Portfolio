@@ -30,11 +30,25 @@ body {
   color: var(--text);
 }
 
+/* CUSTOM SCROLLBAR */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #b56bd6 #f1eaf3;
+}
+
+/* Chrome, Edge, Safari */
+
+/* CUSTOM SCROLLBAR */
+
+/* Hide horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
 }
-
-/* NAVBAR */
 
 /* NAVBAR */
 
@@ -996,6 +1010,66 @@ a {
 .reveal.reveal-visible {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* CUSTOM SCROLL INDICATOR */
+
+.custom-scroll-track {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  bottom: 20px;
+  z-index: 2000;
+
+  width: 3px;
+
+  background: rgba(192, 132, 252, 0.12);
+  border-radius: 999px;
+
+  pointer-events: none;
+}
+
+.custom-scroll-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: linear-gradient(180deg, #c084fc, #e879b9, #9f5fbc);
+
+  border-radius: 999px;
+}
+
+.custom-scroll-sparkle {
+  position: absolute;
+  left: 50%;
+
+  color: #c15ca5;
+  font-size: 15px;
+  line-height: 1;
+
+  text-shadow:
+    0 0 8px rgba(192, 132, 252, 0.45),
+    0 0 14px rgba(232, 121, 185, 0.25);
+
+  transform: translate(-50%, -50%);
+
+  transition: top 0.08s linear;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* MOBILE */
