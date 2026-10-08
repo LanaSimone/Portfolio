@@ -1,3 +1,5 @@
+import DeveloperCard from "./DeveloperCard";
+
 function Hero() {
   return (
     <section className="hero" id="top">
@@ -44,6 +46,8 @@ function Hero() {
           </a>
         </div>
       </div>
+
+      <DeveloperCard />
 
       <div className="hero-tech" aria-hidden="true">
         <span>React</span>
