@@ -10,16 +10,23 @@ function ProjectCard({ project }) {
           <span className="project-sparkle" aria-hidden="true">
             ✦
           </span>
-
-          <div className="project-window">
-            <div className="window-bar">
+          <a
+            className="project-window project-preview-link"
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open live preview of ${project.name}`}
+          >
+            <div className="window-bar" aria-hidden="true">
               <span></span>
               <span></span>
               <span></span>
             </div>
-
             <img src={project.image} alt={`${project.name} application`} />
-          </div>
+            <span className="project-preview-label" aria-hidden="true">
+              Live Preview ↗
+            </span>
+          </a>
         </div>
       </Reveal>
 

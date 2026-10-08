@@ -1,8 +1,27 @@
+import { useRef } from "react";
 import DeveloperCard from "./DeveloperCard";
 
 function Hero() {
+  const heroRef = useRef(null);
+
+  const handleMouseMove = (event) => {
+    const hero = heroRef.current;
+    if (!hero) return;
+
+    const rect = hero.getBoundingClientRect();
+
+    hero.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+    hero.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+  };
+
   return (
-    <section className="hero" id="top">
+    <section
+      className="hero"
+      id="top"
+      ref={heroRef}
+      onMouseMove={handleMouseMove}
+    >
+      <div className="hero-cursor-glow" aria-hidden="true"></div>
       <div className="hero-glow hero-glow-one"></div>
       <div className="hero-glow hero-glow-two"></div>
 
