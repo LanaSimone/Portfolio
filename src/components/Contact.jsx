@@ -5,7 +5,7 @@ function Contact() {
     <section className="contact-section" id="contact">
       <Reveal direction="up">
         <div className="contact-content">
-          <p className="section-label">05 / LET'S CONNECT ✦</p>
+          <p className="section-label">LET'S CONNECT ✦</p>
 
           <h2>
             Have an idea?

@@ -6,7 +6,7 @@ function Projects() {
     <section className="projects-section" id="projects">
       <div className="projects-heading">
         <div>
-          <p className="section-label">02 / FEATURED WORK ✦</p>
+          <p className="section-label">FEATURED WORK ✦</p>
           <h2>Projects</h2>
         </div>
 

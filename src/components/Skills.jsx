@@ -5,7 +5,7 @@ function Skills() {
     <section className="skills-section" id="skills">
       <div className="skills-heading">
         <div>
-          <p className="section-label">03 / SKILLS ✦</p>
+          <p className="section-label">SKILLS ✦</p>
           <h2>My toolkit</h2>
         </div>
 

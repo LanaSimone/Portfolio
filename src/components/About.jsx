@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about-section" id="about">
       <div className="about-heading">
-        <p className="section-label">04 / ABOUT ✦</p>
+        <p className="section-label">ABOUT ✦</p>
         <h2>A little about me</h2>
       </div>
 
